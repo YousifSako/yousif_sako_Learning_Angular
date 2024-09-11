@@ -10,4 +10,6 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'yousif-sako-Learning-Angular';
+  varName:string='Javascript';
+  varTest:string='Test';
 }
