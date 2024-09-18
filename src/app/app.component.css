@@ -1,0 +1,15 @@
+html{
+  background-color: aliceblue;
+}
+div > div > h1{
+  text-align: center;
+}
+div {
+  margin: 0 50px 0 50px;
+}
+table, th, td {
+  border:2px solid black;
+  text-align: center;
+  background-color: lightgray;
+  font-size: 20px;
+}

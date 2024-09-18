@@ -3,5 +3,5 @@ export interface Games {
   name: string,
   genre: string,
   rating: number,
-  releaseDate?: Date
+  releaseDate?: string
 }
