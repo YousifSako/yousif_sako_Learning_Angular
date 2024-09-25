@@ -1,4 +1,1 @@
-<app-games-list-item [game]="gameList[1]"></app-games-list-item>
-<app-games-list-item [game]="gameList[2]"></app-games-list-item>
-<app-games-list-item [game]="gameList[3]"></app-games-list-item>
-<app-games-list-item [game]="gameList[4]"></app-games-list-item>
+<app-games-list-item *ngFor="let game of gameList" [game]="game"></app-games-list-item>
