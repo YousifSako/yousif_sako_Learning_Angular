@@ -1,1 +1,7 @@
-<p>games-list-item works!</p>
+<div *ngIf="game" style="border: 2px solid;">
+  <h3>{{ game.name }}</h3>
+  <p>ID: {{ game.id }}</p>
+  <p>Genre: {{ game.genre }}</p>
+  <p>Rating: {{ game.rating }}</p>
+  <p *ngIf="game.releaseDate">Release Date: {{ game.releaseDate }}</p>
+</div>
