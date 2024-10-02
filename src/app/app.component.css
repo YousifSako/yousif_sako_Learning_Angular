@@ -13,3 +13,7 @@ table, th, td {
   background-color: lightgray;
   font-size: 20px;
 }
+
+p, h3{
+  text-align: center;
+}

@@ -1,7 +1,6 @@
 div {
   background: gray;
 }
-
 p:nth-of-type(odd) {
   background: teal;
 }
@@ -9,4 +8,6 @@ p:nth-of-type(odd) {
 p:nth-of-type(even) {
   background: pink;
 }
-
+div {
+  margin: 10px 0 10px 0;
+}
