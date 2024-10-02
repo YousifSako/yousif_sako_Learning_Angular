@@ -8,5 +8,5 @@ export const gameList: Games[] = [
     {id: 4, name: "Apex", genre: "Shooter", rating: 8, releaseDate: "4/06/2022"},
     {id: 5, name: "COD6", genre: "Shooter", rating: 7, releaseDate: "8/06/2024"},
     {id: 6, name: "Minecraft", genre: "Survival", rating: 7, releaseDate: "7/06/2009"}
-]
+];
 
