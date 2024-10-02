@@ -14,4 +14,5 @@ import {NgForOf, NgIf} from "@angular/common";
 })
 export class GamesListItemComponent {
   @Input() game?: Games;
+  @Input() item?: Games;
 }

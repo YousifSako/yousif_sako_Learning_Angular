@@ -9,14 +9,7 @@
     <div>
       <div>
         <h1>List Of Games</h1>
-        <div *ngIf="gameItem" style="border: 2px solid;">
-          <h3>{{ gameItem.name }}</h3>
-          <p>ID: {{ gameItem.id }}</p>
-          <p>Genre: {{ gameItem.genre }}</p>
-          <p>Rating: {{ gameItem.rating }}</p>
-          <p *ngIf="gameItem.releaseDate">Release Date: {{ gameItem.releaseDate }}</p>
-        </div>
-        <app-games-list-item></app-games-list-item>
+        <app-games-list-item [item]="gameItem"></app-games-list-item>
         <app-games-list></app-games-list>
       </div>
     </div>

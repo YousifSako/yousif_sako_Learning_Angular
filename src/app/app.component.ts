@@ -3,7 +3,6 @@ import { RouterOutlet } from '@angular/router';
 import { Games } from "./shared/models/games";
 import {NgForOf, NgIf} from "@angular/common";
 import {GamesListComponent} from "./games-list/games-list.component";
-import {gameList} from "./data/mock-content";
 import {GamesListItemComponent} from "./games-list-item/games-list-item.component";
 import {GameService} from "./services/game.service";
 
@@ -19,13 +18,10 @@ export class AppComponent implements OnInit{
 
   constructor(private gameService: GameService) {
   }
-
   gameItem: Games | undefined;
   ngOnInit(): void {
     this.gameService.getGameById(5).subscribe((gameItem) =>{
       this.gameItem = gameItem;
     });
   }
-  protected readonly gameList = gameList;
 }
-
