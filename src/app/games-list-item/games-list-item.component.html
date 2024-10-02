@@ -1,11 +1,11 @@
-<div class="selectedItem" *ngIf="item" style="border: 2px solid;">
-  <h3>{{ item.name }}</h3>
-  <p>ID: {{ item.id }}</p>
-  <p>Genre: {{ item.genre }}</p>
-  <p>Rating: {{ item.rating }}</p>
-  <p *ngIf="item.releaseDate">Release Date: {{ item.releaseDate }}</p>
+<div class="selectedItem" *ngIf="selectedGame" style="border: 2px solid;">
+  <h3>{{ selectedGame.name }}</h3>
+  <p>ID: {{ selectedGame.id }}</p>
+  <p>Genre: {{ selectedGame.genre }}</p>
+  <p>Rating: {{ selectedGame.rating }}</p>
+  <p *ngIf="selectedGame.releaseDate">Release Date: {{ selectedGame.releaseDate }}</p>
 </div>
-<div *ngIf="game" style="border: 2px solid;">
+<div *ngFor="let game of gameList" style="border: 2px solid;" (click)="selectGame(game)">
   <h3>{{ game.name }}</h3>
   <p>ID: {{ game.id }}</p>
   <p>Genre: {{ game.genre }}</p>

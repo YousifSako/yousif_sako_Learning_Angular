@@ -1,6 +1,7 @@
 import {Component, Input} from '@angular/core';
 import {Games} from "../shared/models/games";
 import {NgForOf, NgIf} from "@angular/common";
+import {gameList} from "../data/mock-content";
 
 @Component({
   selector: 'app-games-list-item',
@@ -15,4 +16,11 @@ import {NgForOf, NgIf} from "@angular/common";
 export class GamesListItemComponent {
   @Input() game?: Games;
   @Input() item?: Games;
+  selectedGame?: Games;
+  //function to set which student to display
+  selectGame(games: Games): void {
+    this.selectedGame = games;
+  }
+
+  protected readonly gameList = gameList;
 }

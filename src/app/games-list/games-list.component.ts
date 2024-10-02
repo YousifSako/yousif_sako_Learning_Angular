@@ -28,4 +28,10 @@ export class GamesListComponent implements OnInit{
       complete: () => console.log("Game data fetch complete!")
     })
   }
+
+  selectedItem?: Games;
+  selectGame(student: Games): void {
+    this.selectedItem = student;
+  }
+
 }
