@@ -1,18 +1,15 @@
 .selectedItem {
   background-color: white;
-  p, h3{
-    text-align: center;
-    background-color: white;
-  }
+  text-align: center;
 }
 div {
   background: gray;
 }
-p:nth-of-type(odd) {
+div:nth-of-type(odd) {
   background: teal;
 }
 
-p:nth-of-type(even) {
+div:nth-of-type(even) {
   background: pink;
 }
 div {
