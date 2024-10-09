@@ -14,4 +14,9 @@ div:nth-of-type(even) {
 }
 div {
   margin: 10px 0 10px 0;
+  text-align: center  ;
+}
+
+img {
+  width: 500px;
 }

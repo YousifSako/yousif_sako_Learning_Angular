@@ -3,5 +3,6 @@ export interface Games {
   name: string,
   genre: string,
   rating: number,
-  releaseDate?: string
+  releaseDate?: string,
+  imgPath: string
 }

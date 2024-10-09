@@ -5,6 +5,7 @@
     <p>Genre: {{ selectedGame.genre }}</p>
     <p>Rating: {{ selectedGame.rating }}</p>
     <p *ngIf="selectedGame.releaseDate">Release Date: {{ selectedGame.releaseDate }}</p>
+    <img src="{{selectedGame.imgPath}}" alt="">
   </div>
   <div *ngFor="let game of gameList" style="border: 2px solid;" (click)="selectGame(game)">
     <h3>{{ game.name }}</h3>
@@ -12,5 +13,6 @@
     <p>Genre: {{ game.genre }}</p>
     <p>Rating: {{ game.rating }}</p>
     <p *ngIf="game.releaseDate">Release Date: {{ game.releaseDate }}</p>
+    <img src="{{game.imgPath}}" alt="">
   </div>
 </section>
