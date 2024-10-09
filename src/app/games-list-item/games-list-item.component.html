@@ -1,14 +1,16 @@
-<div class="selectedItem" *ngIf="selectedGame" style="border: 2px solid; background-color: white">
-  <h3>{{ selectedGame.name }}</h3>
-  <p>ID: {{ selectedGame.id }}</p>
-  <p>Genre: {{ selectedGame.genre }}</p>
-  <p>Rating: {{ selectedGame.rating }}</p>
-  <p *ngIf="selectedGame.releaseDate">Release Date: {{ selectedGame.releaseDate }}</p>
-</div>
-<div *ngFor="let game of gameList" style="border: 2px solid;" (click)="selectGame(game)">
-  <h3>{{ game.name }}</h3>
-  <p>ID: {{ game.id }}</p>
-  <p>Genre: {{ game.genre }}</p>
-  <p>Rating: {{ game.rating }}</p>
-  <p *ngIf="game.releaseDate">Release Date: {{ game.releaseDate }}</p>
-</div>
+<section>
+  <div class="selectedItem" *ngIf="selectedGame" style="border: 2px solid; background-color: white">
+    <h3>{{ selectedGame.name }}</h3>
+    <p>ID: {{ selectedGame.id }}</p>
+    <p>Genre: {{ selectedGame.genre }}</p>
+    <p>Rating: {{ selectedGame.rating }}</p>
+    <p *ngIf="selectedGame.releaseDate">Release Date: {{ selectedGame.releaseDate }}</p>
+  </div>
+  <div *ngFor="let game of gameList" style="border: 2px solid;" (click)="selectGame(game)">
+    <h3>{{ game.name }}</h3>
+    <p>ID: {{ game.id }}</p>
+    <p>Genre: {{ game.genre }}</p>
+    <p>Rating: {{ game.rating }}</p>
+    <p *ngIf="game.releaseDate">Release Date: {{ game.releaseDate }}</p>
+  </div>
+</section>

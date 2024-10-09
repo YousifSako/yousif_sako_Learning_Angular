@@ -2,14 +2,16 @@ import {Component, Input} from '@angular/core';
 import {Games} from "../shared/models/games";
 import {NgForOf, NgIf} from "@angular/common";
 import {gameList} from "../data/mock-content";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-games-list-item',
   standalone: true,
-  imports: [
-    NgForOf,
-    NgIf
-  ],
+    imports: [
+        NgForOf,
+        NgIf,
+        RouterLink
+    ],
   templateUrl: './games-list-item.component.html',
   styleUrl: './games-list-item.component.css'
 })

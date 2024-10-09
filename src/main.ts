@@ -1,17 +1,16 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
 import { AppComponent } from './app/app.component';
 import { provideRouter, Routes} from "@angular/router";
-import {GamesListComponent} from "./app/games-list/games-list.component";
 import {GamesListItemComponent} from "./app/games-list-item/games-list-item.component";
-
-bootstrapApplication(AppComponent, appConfig)
-  .catch((err) => console.error(err));
+import {PageNotFoundComponent} from "./app/page-not-found/page-not-found.component";
+import {ModifyListItemComponent} from "./app/modify-list-item/modify-list-item.component";
+import {GamesListComponent} from "./app/games-list/games-list.component";
 
 const routes: Routes = [
   {path:'', redirectTo: '/games', pathMatch: 'full'},
-  {path: 'games', component: GamesListComponent},
-  {path: 'games/:id', component: GamesListItemComponent}
+  {path: 'games', component: GamesListItemComponent},
+  {path: 'games/modify-game', component: ModifyListItemComponent},
+  {path: '**', component: PageNotFoundComponent}
 ];
 bootstrapApplication(AppComponent, {
   providers: [provideRouter(routes)]

@@ -5,12 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+  <header>
+    <nav>
+      <a routerLink="/games" routerLinkActive="active">Games List</a>
+      <a routerLink="games/modify-game" routerLinkActive="active">Modify Game</a>
+    </nav>
+  </header>
   <body>
     <div>
       <div>
-        <h1>List Of Games</h1>
-        <app-games-list-item [item]="gameItem"></app-games-list-item>
-        <app-games-list></app-games-list>
+        <router-outlet></router-outlet>
       </div>
     </div>
   </body>

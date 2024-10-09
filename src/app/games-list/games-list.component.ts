@@ -1,16 +1,17 @@
 import {Component, OnInit} from '@angular/core';
 import {Games} from "../shared/models/games";
 import {GamesListItemComponent} from "../games-list-item/games-list-item.component";
-import {NgForOf} from "@angular/common";
+import {NgForOf, NgIf} from "@angular/common";
 import {GameService} from "../services/game.service";
 
 @Component({
   selector: 'app-games-list',
   standalone: true,
-  imports: [
-    GamesListItemComponent,
-    NgForOf
-  ],
+    imports: [
+        GamesListItemComponent,
+        NgForOf,
+        NgIf
+    ],
   templateUrl: './games-list.component.html',
   styleUrl: './games-list.component.css'
 })
